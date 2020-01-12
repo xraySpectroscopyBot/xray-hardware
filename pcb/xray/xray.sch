@@ -14,28 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Module:Arduino_Nano_v3.x A1
-U 1 1 5E1B5952
-P 4400 2400
-F 0 "A1" H 4400 1311 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 4400 1220 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 4400 2400 50  0001 C CIN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 4400 2400 50  0001 C CNN
-	1    4400 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Raspberry_Pi_2_3 J1
-U 1 1 5E1B8D85
-P 2200 2700
-F 0 "J1" H 2200 4181 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 2200 4090 50  0000 C CNN
-F 2 "" H 2200 2700 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2200 2700 50  0001 C CNN
-	1    2200 2700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C1
 U 1 1 5E1C1B73
 P 8400 1200
@@ -46,50 +24,6 @@ F 3 "~" H 8400 1200 50  0001 C CNN
 	1    8400 1200
 	1    0    0    -1  
 $EndComp
-Text GLabel 2000 1050 1    50   Input ~ 0
-5V
-Text GLabel 950  1800 0    50   Input ~ 0
-TX
-Text GLabel 950  1900 0    50   Input ~ 0
-RX
-Wire Wire Line
-	2000 1400 2000 1050
-Wire Wire Line
-	1400 1800 950  1800
-Wire Wire Line
-	1800 4350 1800 4000
-$Comp
-L power:GND #PWR?
-U 1 1 5E21297F
-P 1800 4350
-F 0 "#PWR?" H 1800 4100 50  0001 C CNN
-F 1 "GND" H 1805 4177 50  0000 C CNN
-F 2 "" H 1800 4350 50  0001 C CNN
-F 3 "" H 1800 4350 50  0001 C CNN
-	1    1800 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E214FEC
-P 4400 3750
-F 0 "#PWR?" H 4400 3500 50  0001 C CNN
-F 1 "GND" H 4405 3577 50  0000 C CNN
-F 2 "" H 4400 3750 50  0001 C CNN
-F 3 "" H 4400 3750 50  0001 C CNN
-	1    4400 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 3750 4400 3400
-Text GLabel 4300 1050 1    50   Input ~ 0
-5V
-Text GLabel 3550 1900 0    50   Input ~ 0
-RX
-Text GLabel 3550 1800 0    50   Input ~ 0
-TX
-Wire Wire Line
-	4300 1050 4300 1400
 $Comp
 L power:GND #PWR?
 U 1 1 5E228E9B
@@ -149,20 +83,6 @@ F 3 "" H 6800 3200 50  0001 C CNN
 	1    6800 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	950  1900 1400 1900
-Wire Wire Line
-	3550 1900 3900 1900
-Wire Wire Line
-	3550 1800 3900 1800
-Text GLabel 5250 2800 2    50   Input ~ 0
-DIR
-Text GLabel 5250 2900 2    50   Input ~ 0
-STP
-Wire Wire Line
-	4900 2800 5250 2800
-Wire Wire Line
-	5250 2900 4900 2900
 Text GLabel 6050 2200 0    50   Input ~ 0
 DIR
 Text GLabel 6050 2100 0    50   Input ~ 0
@@ -236,4 +156,40 @@ Wire Wire Line
 	7750 2000 7750 1900
 Wire Wire Line
 	7750 1900 7200 1900
+$Comp
+L MCU_Module:Arduino_Leonardo A?
+U 1 1 5E1C1CEB
+P 1900 2400
+F 0 "A?" H 1900 3581 50  0000 C CNN
+F 1 "Arduino_Leonardo" H 1900 3490 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 1900 2400 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/ArduinoBoardLeonardo" H 1900 2400 50  0001 C CNN
+	1    1900 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 1000 1    50   Input ~ 0
+5V
+$Comp
+L power:GND #PWR?
+U 1 1 5E1C79C8
+P 1800 3850
+F 0 "#PWR?" H 1800 3600 50  0001 C CNN
+F 1 "GND" H 1805 3677 50  0000 C CNN
+F 2 "" H 1800 3850 50  0001 C CNN
+F 3 "" H 1800 3850 50  0001 C CNN
+	1    1800 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1000 2900 0    50   Input ~ 0
+DIR
+Text GLabel 1000 2800 0    50   Input ~ 0
+STP
+Wire Wire Line
+	1000 2800 1400 2800
+Wire Wire Line
+	1400 2900 1000 2900
+Wire Wire Line
+	1800 3850 1800 3500
+Wire Wire Line
+	1800 1000 1800 1400
 $EndSCHEMATC
