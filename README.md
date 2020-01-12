@@ -5,5 +5,5 @@
 * Print in PLA or PETG.
 
 ## Schematic
-* The [Arduino Nano Branch](https://github.com/xraySpectroscopyBot/xray-hardware/tree/arduino-nano/pcb) contains the Schematic for using an Arduino connected to a Raspberry Pi.
-* The Version connected directly to a PC can be found in the [Pro Micro Branch](https://github.com/xraySpectroscopyBot/xray-hardware/tree/arduino-pro-micro/pcb)
+* The [Arduino Nano Branch](https://github.com/xraySpectroscopyBot/xray-hardware/tree/arduino-nano/pcb/xray) contains the Schematic for using an Arduino connected to a Raspberry Pi.
+* The Version connected directly to a PC can be found in the [Pro Micro Branch](https://github.com/xraySpectroscopyBot/xray-hardware/tree/arduino-pro-micro/pcb/xray)
